@@ -100,7 +100,7 @@
                 <div class="summary">
                         <pre class="line-numbers">
                         <code class="language-css">
-                        name: d10ps
+name: d10ps
 recipe: pantheon
 config:
   framework: drupal8
@@ -122,10 +122,10 @@ proxy:
                         </pre>
                     <ul>
                         <li>sudo ln -s ~/.docker/run/docker.sock /var/run/docker.sock 
-                        </li><li> sudo git clone https://github.com/drush-ops/drush.git /usr/local/src/drush
-                        </li><li>  cd /usr/local/src/drush
-                        </li><li>  sudo git checkout 10.2.2
-                         </li><li>  sudo ln -s /usr/local/src/drush/drush /usr/bin/drush
+                        </li><li> lando rebuild
+                        </li><li>  lando push
+                        </li><li>  lando start
+                         </li><li>  lando pull
                          </li><li>  sudo composer install
                          </li><li>  drush --version
                          </li><li>  cd "/usr/local/src/drush" && composer require drush/drush
