@@ -100,13 +100,13 @@
                 <div class="summary">
                   Redis is an in-memory data store that can be used as a caching layer in Drupal to improve performance. Here's an overview of how Redis works with Drupal:
 <ol>
-<li>1. Installation: Install the Redis module and the Redis server.</li>
-<li>2. Configuration: Configure the Redis module to connect to the Redis server.</li>
-<li>3. Cache backend: Set Redis as the cache backend in Drupal's settings.php file.</li>
-<li>4. Cache storage: Drupal stores cache data in Redis instead of the database or file system.</li>
-<li>5. Cache retrieval: When Drupal needs cached data, it requests it from Redis.</li>
-<li>6. Cache expiration: Redis automatically expires cached data based on a TTL (time to live) setting.</li>
-<li>7. Cache invalidation: Drupal can invalidate cached data in Redis when content is updated.</li>
+<li> Installation: Install the Redis module and the Redis server.</li>
+<li> Configuration: Configure the Redis module to connect to the Redis server.</li>
+<li> Cache backend: Set Redis as the cache backend in Drupal's settings.php file.</li>
+<li> Cache storage: Drupal stores cache data in Redis instead of the database or file system.</li>
+<li> Cache retrieval: When Drupal needs cached data, it requests it from Redis.</li>
+<li> Cache expiration: Redis automatically expires cached data based on a TTL (time to live) setting.</li>
+<li> Cache invalidation: Drupal can invalidate cached data in Redis when content is updated.</li>
 </ol>
 Redis provides several benefits when used with Drupal:
 
@@ -116,20 +116,20 @@ Redis provides several benefits when used with Drupal:
 4. Persistence: Redis can be configured to persist data to disk, ensuring cache survival during restarts.
 
 Drupal uses Redis for various cache types, including:
-
-1. Page cache
-2. Block cache
-3. View cache
-4. Menu cache
-5. Entity cache
-
+<ul>
+<li>1. Page cache</li>
+<li>2. Block cache</li>
+<li>3. View cache</li>
+<li>4. Menu cache</li>
+<li>5. Entity cache</li>
+</ul>
 Some key configurations and considerations:
-
-1. Redis server settings: Configure the Redis server for optimal performance.
-2. Cache expiration: Set appropriate TTL values for different cache types.
-3. Cache invalidation: Implement cache invalidation strategies to ensure data consistency.
-4. Redis version: Use a compatible Redis version (e.g., Redis 6.x) with the Redis module.
-
+<ul>
+<li>1. Redis server settings: Configure the Redis server for optimal performance.</li>
+<li>2. Cache expiration: Set appropriate TTL values for different cache types.</li>
+<li>3. Cache invalidation: Implement cache invalidation strategies to ensure data consistency.</li>
+<li>4. Redis version: Use a compatible Redis version (e.g., Redis 6.x) with the Redis module.</li>
+</ul>
 By leveraging Redis as a caching layer, Drupal sites can achieve significant performance improvements and scalability.
                     
                     
