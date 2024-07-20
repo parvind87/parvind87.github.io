@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Parvind Sharma</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
+    <meta name="author" content="Parvind Sharma">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Google Font -->
+    <link
+        href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
+        integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9"
+        crossorigin="anonymous"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/orbit-1.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar-wrapper">
+            <div class="profile-container">
+                <img class="profile" src="assets/images/pk.png" alt="" height="100"/>
+                <h1 class="name">Parvind Sharma</h1>
+                <h3 class="tagline">Full Stack Developer</h3>
+            </div>
+            <!--//profile-container-->
+
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                    <li class="email"><i class="fas fa-envelope"></i><a
+                            href="mailto: mail2parvind@gmail.com">mail2parvind@gmail.com</a></li>
+                    <li class="phone"><i class="fas fa-phone"></i><a href="tel:7053909995">7053909995</a></li>
+                    <li class="website"><i class="fas fa-globe"></i><a href="https://parvind87.github.io/"
+                            target="_blank">https://parvind87.github.io/</a></li>
+                    <li class="linkedin"><i class="fab fa-linkedin-in"></i><a
+                            href="https://www.linkedin.com/in/parvind-sharma"
+                            target="_blank">linkedin.com/in/parvind-sharma</a></li>
+                    <li class="github"><i class="fab fa-github"></i><a href="http://github.com/parvind87"
+                            target="_blank">github.com/parvind87</a></li>
+                    <li class="twitter"><i class="fab fa-twitter"></i><a href="https://twitter.com/parvind87"
+                            target="_blank">@parvind87</a></li>
+                </ul>
+            </div>
+            <!--//contact-container-->
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Education</h2>
+                <div class="item">
+                    <h4 class="degree">BCA in Computer Science</h4>
+                    <h5 class="meta">Indira Gandhi National Open University</h5>
+                    <div class="time">2004 - 2007</div>
+                </div>
+                <!--//item-->
+                <!-- <div class="item">
+                    <h4 class="degree">BSc in Applied Mathematics</h4>
+                    <h5 class="meta">Bristol University</h5>
+                    <div class="time">2007 - 2011</div>
+                </div> -->
+                <!--//item-->
+            </div>
+            <!--//education-container-->
+
+            <div class="languages-container container-block">
+                <h2 class="container-block-title">Languages</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>Hindi <span class="lang-desc">(Native)</span></li>
+                    <li>English <span class="lang-desc">(Professional)</span></li>
+                    <!--<li>Spanish <span class="lang-desc">(Professional)</span></li>-->
+                </ul>
+            </div>
+            <!--//interests-->
+
+            <div class="interests-container container-block">
+                <h2 class="container-block-title">Interests</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>Traveling</li>
+                    <li>Coding</li>
+                    <li>Chess</li>
+                </ul>
+            </div>
+            <!--//interests-->
+
+        </div>
+        <!--//sidebar-wrapper-->
+
+        <div class="main-wrapper">
+
+            <section class="section summary-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span>How redish works with drupal?
+                </h2>
+                <div class="summary">
+                  Redis is an in-memory data store that can be used as a caching layer in Drupal to improve performance. Here's an overview of how Redis works with Drupal:
+<ol>
+<li>1. Installation: Install the Redis module and the Redis server.</li>
+<li>2. Configuration: Configure the Redis module to connect to the Redis server.</li>
+<li>3. Cache backend: Set Redis as the cache backend in Drupal's settings.php file.</li>
+<li>4. Cache storage: Drupal stores cache data in Redis instead of the database or file system.</li>
+<li>5. Cache retrieval: When Drupal needs cached data, it requests it from Redis.</li>
+<li>6. Cache expiration: Redis automatically expires cached data based on a TTL (time to live) setting.</li>
+<li>7. Cache invalidation: Drupal can invalidate cached data in Redis when content is updated.</li>
+</ol>
+Redis provides several benefits when used with Drupal:
+
+1. Faster cache retrieval: Redis stores data in memory, making it faster than disk-based caching.
+2. Improved performance: Reduced database queries and faster page loads.
+3. Scalability: Redis can handle high traffic and large datasets.
+4. Persistence: Redis can be configured to persist data to disk, ensuring cache survival during restarts.
+
+Drupal uses Redis for various cache types, including:
+
+1. Page cache
+2. Block cache
+3. View cache
+4. Menu cache
+5. Entity cache
+
+Some key configurations and considerations:
+
+1. Redis server settings: Configure the Redis server for optimal performance.
+2. Cache expiration: Set appropriate TTL values for different cache types.
+3. Cache invalidation: Implement cache invalidation strategies to ensure data consistency.
+4. Redis version: Use a compatible Redis version (e.g., Redis 6.x) with the Redis module.
+
+By leveraging Redis as a caching layer, Drupal sites can achieve significant performance improvements and scalability.
+                    
+                    
+                </div>
+                <!--//summary-->
+            </section>
+            <!--//section-->
+
+
+        </div>
+        <!--//main-body-->
+    </div>
+
+    <footer class="footer">
+        <div class="text-center">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other commercial license options via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a
+                    href="https://parvind87.github.io/" target="_blank">Parvind</a> for self</small>
+        </div>
+        <!--//container-->
+    </footer>
+    <!--//footer-->
+
+</body>
+
+</html>
