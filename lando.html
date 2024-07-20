@@ -98,6 +98,28 @@
                 <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span>lando
                 </h2>
                 <div class="summary">
+                        <pre class="line-numbers">
+                        <code class="language-css">
+                        name: d10ps
+recipe: pantheon
+config:
+  framework: drupal8
+  site: d10ps
+  id: aca4e634-e0f4-4711-b0a4-2b8f31708338
+services:
+  myservice:
+    type: phpmyadmin
+  memcache:
+    type: memcached:1.5.11
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+proxy:
+  mailhog:
+    - mail.d10.lndo.site
+                        </code>
+                        </pre>
                     <ul>
                         <li>sudo ln -s ~/.docker/run/docker.sock /var/run/docker.sock 
                         </li><li> sudo git clone https://github.com/drush-ops/drush.git /usr/local/src/drush
