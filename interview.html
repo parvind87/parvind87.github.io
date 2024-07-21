@@ -108,13 +108,14 @@
 <li> Cache expiration: Redis automatically expires cached data based on a TTL (time to live) setting.</li>
 <li> Cache invalidation: Drupal can invalidate cached data in Redis when content is updated.</li>
 </ol>
-Redis provides several benefits when used with Drupal:
 
+<h3>Redis provides several benefits when used with Drupal:</h3>
+<ul><li>
 1. Faster cache retrieval: Redis stores data in memory, making it faster than disk-based caching.
-2. Improved performance: Reduced database queries and faster page loads.
-3. Scalability: Redis can handle high traffic and large datasets.
-4. Persistence: Redis can be configured to persist data to disk, ensuring cache survival during restarts.
-
+</li><li>2. Improved performance: Reduced database queries and faster page loads.
+</li><li>3. Scalability: Redis can handle high traffic and large datasets.
+</li><li>4. Persistence: Redis can be configured to persist data to disk, ensuring cache survival during restarts.
+</li>
 Drupal uses Redis for various cache types, including:
 <ul>
 <li>1. Page cache</li>
@@ -137,6 +138,46 @@ By leveraging Redis as a caching layer, Drupal sites can achieve significant per
                 <!--//summary-->
             </section>
             <!--//section-->
+
+<section class="section summary-section">
+<h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span>How to configure solr search in drupal based website?
+</h2>
+<div class="summary">
+    Configuring Solr search in a Drupal-based website involves several steps:
+<ul><li>
+1. Install and configure the Solr server:
+    - Download and install Solr from the Apache Solr website.
+    - Configure Solr to run as a service or start it manually.
+</li><li>2. Install the Drupal Solr module:
+    - Download and install the Search API Solr module from (link unavailable)
+    - Enable the module in the Drupal administration interface.
+</li><li>3. Configure the Solr connection:
+    - Go to the Search API settings page (admin/config/search/search-api).
+    - Add a new Solr connection, specifying the Solr server URL and other settings.
+</li><li>4. Configure the search index:
+    - Create a new search index (admin/config/search/search-api/indexes).
+    - Select the Solr connection and configure the index settings (e.g., fields to index).
+</li><li>5. Configure the search interface:
+    - Create a new search page or block (admin/structure/views).
+    - Add a Search API Solr filter to the view.
+</li><li>6. Index content:
+    - Go to the Search API settings page (admin/config/search/search-api).
+    - Run the "Index content" operation to index your Drupal content.
+</li><li>7. Test the search:
+    - Search for content on your Drupal site to test the Solr search integration.
+</li></ul>
+Some additional considerations:
+<ul><li>
+- Make sure your Solr server is properly configured and running.
+</li><li>- Adjust Solr settings, such as the schema.xml file, to optimize performance.
+</li><li>- Use the Search API Solr module's built-in features, like faceting and filtering.
+</li><li>- Consider implementing additional features, like autocomplete or spell checking.
+</li></ul>
+Remember to consult the official documentation for the Search API Solr module and (link unavailable) resources for more detailed instructions and troubleshooting tips.
+</div>
+<!--//summary-->
+</section>
+<!--//section-->
 
 
         </div>
