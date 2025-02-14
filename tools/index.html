@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Tools Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+<header>
+  <h1>Web Tools Hub</h1>
+  <nav>
+    <ul class="megamenu">
+      <li><a href="#image-resizer">Image Resizer</a></li>
+      <li><a href="#geolocation">Geolocation Tools</a>
+        <ul class="submenu">
+          <li><a href="#city-from-latlon">Get City from Lat/Lon</a></li>
+          <li><a href="#latlon-from-address">Get Lat/Lon from Address</a></li>
+        </ul>
+      </li>
+      <li><a href="#countdown">Countdown</a></li>
+      <li><a href="#timer">Timer</a></li>
+      <li><a href="#colorpicker">Color Picker</a></li>
+      <li><a href="#calculator">Calculator</a></li>
+      <li><a href="#currency-converter">Currency Converter</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- Image Resizer -->
+  <section id="image-resizer">
+    <h2>Image Resizer</h2>
+    <input type="file" id="image-upload" accept="image/*">
+    <canvas id="image-canvas"></canvas>
+    <button id="resize-button">Resize Image</button>
+    <a id="download-link" download="resized-image.png">Download Resized Image</a>
+  </section>
+
+  <!-- Geolocation Tools -->
+  <section id="geolocation">
+    <h2>Geolocation Tools</h2>
+    <div id="city-from-latlon">
+      <h3>Get City from Latitude/Longitude</h3>
+      <input type="text" id="latitude" placeholder="Latitude">
+      <input type="text" id="longitude" placeholder="Longitude">
+      <button id="get-city-button">Get City</button>
+      <p id="city-result"></p>
+    </div>
+    <div id="latlon-from-address">
+      <h3>Get Latitude/Longitude from Address</h3>
+      <input type="text" id="address" placeholder="Enter Address">
+      <button id="get-latlon-button">Get Lat/Lon</button>
+      <p id="latlon-result"></p>
+    </div>
+  </section>
+
+  <!-- Countdown -->
+  <section id="countdown">
+    <h2>Countdown</h2>
+    <input type="datetime-local" id="countdown-date">
+    <button id="start-countdown">Start Countdown</button>
+    <p id="countdown-timer"></p>
+  </section>
+
+  <!-- Timer -->
+  <section id="timer">
+    <h2>Timer</h2>
+    <input type="number" id="timer-input" placeholder="Enter seconds">
+    <button id="start-timer">Start Timer</button>
+    <p id="timer-display"></p>
+  </section>
+
+  <!-- Color Picker -->
+  <section id="colorpicker">
+    <h2>Color Picker</h2>
+    <input type="color" id="color-input">
+    <p>Selected Color: <span id="color-value"></span></p>
+  </section>
+
+  <!-- Calculator -->
+  <section id="calculator">
+    <h2>Calculator</h2>
+    <input type="text" id="calc-input" readonly>
+    <div class="calc-buttons">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>/</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>*</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>-</button>
+      <button>0</button>
+      <button>.</button>
+      <button>=</button>
+      <button>+</button>
+      <button id="clear">C</button>
+    </div>
+  </section>
+
+  <!-- Currency Converter -->
+  <section id="currency-converter">
+    <h2>Currency Converter</h2>
+    <input type="number" id="amount" placeholder="Amount">
+    <select id="from-currency">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="INR">INR</option>
+    </select>
+    <select id="to-currency">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="INR">INR</option>
+    </select>
+    <button id="convert-button">Convert</button>
+    <p id="conversion-result"></p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2023 Web Tools Hub. All rights reserved.</p>
+</footer>
+</body>
+</html>
