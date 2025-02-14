@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extract Text from Image</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="../../tools/common.js" defer></script>
+  <link rel="stylesheet" href="../../tools/styles.css">
+</head>
+<body>
+
+<div id="header"></div>
+<div class="containerwrap">
+    <div class="container">
+      <h1>Extract Text from Image</h1>
+      <input type="file" id="image-input" accept="image/*" />
+      <div id="image-container">
+        <img id="uploaded-image" src="#" alt="Uploaded Image" />
+      </div>
+      <button id="extract-btn">Extract Text</button>
+      <div id="result">
+        <h2>Extracted Text:</h2>
+        <p id="extracted-text"></p>
+      </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.4/dist/tesseract.min.js"></script>
+<script src="script.js"></script>
+<div id="footer"></div>
+</body>
+</html>
