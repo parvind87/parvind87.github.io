@@ -8,25 +8,32 @@
   <script src="scripts.js" defer></script>
 </head>
 <body>
-<header>
-  <h1>Web Tools Hub</h1>
-  <nav>
-    <ul class="megamenu">
-      <li><a href="#image-resizer">Image Resizer</a></li>
-      <li><a href="#geolocation">Geolocation Tools</a>
-        <ul class="submenu">
-          <li><a href="#city-from-latlon">Get City from Lat/Lon</a></li>
-          <li><a href="#latlon-from-address">Get Lat/Lon from Address</a></li>
-        </ul>
-      </li>
-      <li><a href="#countdown">Countdown</a></li>
-      <li><a href="#timer">Timer</a></li>
-      <li><a href="#colorpicker">Color Picker</a></li>
-      <li><a href="#calculator">Calculator</a></li>
-      <li><a href="#currency-converter">Currency Converter</a></li>
-    </ul>
-  </nav>
-</header>
+<div id="header"></div>
+<!--<header>-->
+<!--  <h1>Web Tools Hub</h1>-->
+<!--  <nav>-->
+<!--    <ul class="megamenu">-->
+<!--      <li><a href="#image-resizer">Image Resizer</a></li>-->
+<!--      <li><a href="#geolocation">Geolocation Tools</a>-->
+<!--        <ul class="submenu">-->
+<!--          <li><a href="#city-from-latlon">Get City from Lat/Lon</a></li>-->
+<!--          <li><a href="#latlon-from-address">Get Lat/Lon from Address</a></li>-->
+<!--        </ul>-->
+<!--      </li>-->
+<!--      <li><a href="#countdown">Countdown</a>-->
+<!--        <ul class="submenu">-->
+<!--          <li><a href="#city-from-latlon">Stopwatch</a></li>-->
+<!--          <li><a href="#timer">Timer</a></li>-->
+<!--        </ul>-->
+
+<!--      </li>-->
+
+<!--      <li><a href="#colorpicker">Color Picker</a></li>-->
+<!--      <li><a href="#calculator">Calculator</a></li>-->
+<!--      <li><a href="#currency-converter">Currency Converter</a></li>-->
+<!--    </ul>-->
+<!--  </nav>-->
+<!--</header>-->
 
 <main>
   <!-- Image Resizer -->
@@ -71,7 +78,14 @@
     <button id="start-timer">Start Timer</button>
     <p id="timer-display"></p>
   </section>
-
+  <!-- Stopwatch -->
+  <section id="stopwatch">
+    <h2>Stopwatch</h2>
+    <p id="stopwatch-display">00:00:00</p>
+    <button id="start-stopwatch">Start</button>
+    <button id="stop-stopwatch">Stop</button>
+    <button id="reset-stopwatch">Reset</button>
+  </section>
   <!-- Color Picker -->
   <section id="colorpicker">
     <h2>Color Picker</h2>
@@ -122,9 +136,7 @@
     <p id="conversion-result"></p>
   </section>
 </main>
+<div id="footer"></div>
 
-<footer>
-  <p>&copy; 2023 Web Tools Hub. All rights reserved.</p>
-</footer>
 </body>
 </html>

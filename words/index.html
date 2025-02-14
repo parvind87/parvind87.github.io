@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word of the Day</title>
+  <link rel="stylesheet" href="words.css">
+  <script src="../../tools/common.js" defer></script>
+  <link rel="stylesheet" href="../../tools/styles.css">
+</head>
+<body>
+<div id="header"></div>
+<div class="container">
+  <h1>Word of the Day</h1>
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Enter a word">
+    <button id="search-button">Search</button>
+  </div>
+  <div class="word-card">
+    <h2 id="word">Loading...</h2>
+    <p id="pronunciation">Pronunciation: </p>
+    <audio id="audio" controls style="display: none;">
+      Your browser does not support the audio element.
+    </audio>
+    <p id="definition">Definition: </p>
+    <p id="example">Example: </p>
+    <p id="synonyms">Synonyms: </p>
+    <p id="antonyms">Antonyms: </p>
+  </div>
+  <button id="refresh-button">New Random Word</button>
+</div>
+<script src="words.js"></script>
+<div id="footer"></div>
+</body>
+</html>

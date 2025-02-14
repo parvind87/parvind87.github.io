@@ -1,3 +1,16 @@
+// Function to load external HTML files
+function loadHTML(file, elementId) {
+  fetch(file)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById(elementId).innerHTML = data;
+    })
+    .catch(error => console.error('Error loading HTML:', error));
+}
+
+// Load Header and Footer
+loadHTML('../../includes/header.html', 'header');
+loadHTML('../../includes/footer.html', 'footer');
 // Image Resizer
 document.getElementById('resize-button').addEventListener('click', () => {
   const file = document.getElementById('image-upload').files[0];
@@ -109,4 +122,36 @@ document.getElementById('convert-button').addEventListener('click', async () => 
     const rate = data.rates[to];
     document.getElementById('conversion-result').textContent = `${amount} ${from} = ${(amount * rate).toFixed(2)} ${to}`;
   }
+});
+
+// Stopwatch
+let stopwatchInterval;
+let stopwatchTime = 0;
+
+function formatTime(milliseconds) {
+  const hours = Math.floor(milliseconds / 3600000);
+  const minutes = Math.floor((milliseconds % 3600000) / 60000);
+  const seconds = Math.floor((milliseconds % 60000) / 1000);
+  return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+}
+
+document.getElementById('start-stopwatch').addEventListener('click', () => {
+  if (!stopwatchInterval) {
+    stopwatchInterval = setInterval(() => {
+      stopwatchTime += 1000;
+      document.getElementById('stopwatch-display').textContent = formatTime(stopwatchTime);
+    }, 1000);
+  }
+});
+
+document.getElementById('stop-stopwatch').addEventListener('click', () => {
+  clearInterval(stopwatchInterval);
+  stopwatchInterval = null;
+});
+
+document.getElementById('reset-stopwatch').addEventListener('click', () => {
+  clearInterval(stopwatchInterval);
+  stopwatchInterval = null;
+  stopwatchTime = 0;
+  document.getElementById('stopwatch-display').textContent = formatTime(stopwatchTime);
 });
