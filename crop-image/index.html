@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Cropper and Rotator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Image Cropper and Rotator</h1>
+  <input type="file" id="image-input" accept="image/*">
+  <div class="image-container">
+    <img id="image" src="" alt="Uploaded Image">
+    <div id="crop-box"></div>
+  </div>
+  <div class="controls">
+    <button id="rotate-left">Rotate Left</button>
+    <button id="rotate-right">Rotate Right</button>
+    <button id="crop-button">Crop</button>
+    <button id="reset-button">Reset</button>
+    <button id="download-button">Download</button>
+  </div>
+  <canvas id="canvas" style="display: none;"></canvas>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

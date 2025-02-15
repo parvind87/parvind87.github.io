@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visiting Card Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Visiting Card Builder</h1>
+  <div class="template-selector">
+    <label for="template">Choose a Template:</label>
+    <select id="template">
+      <option value="template1">Template 1</option>
+      <option value="template2">Template 2</option>
+      <option value="template3">Template 3</option>
+    </select>
+  </div>
+  <div class="card-preview" id="card-preview">
+    <!-- Card content will be loaded here -->
+  </div>
+  <div class="form">
+    <input type="text" id="title" placeholder="Title" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="tel" id="phone" placeholder="Phone" required>
+    <input type="text" id="address" placeholder="Address" required>
+    <input type="url" id="website" placeholder="Website URL" required>
+    <input type="file" id="logo" accept="image/*">
+    <button onclick="saveCard()">Save Card as Image</button>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

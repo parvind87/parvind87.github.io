@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Beautifier</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Prism.js CSS for syntax highlighting -->
+  <script src="../../tools/common.js" defer></script>
+  <link rel="stylesheet" href="../../tools/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+</head>
+<body>
+<div id="header"></div>
+<div class="beautifywrap">
+  <div class="container">
+    <h1>HTML Beautifier</h1>
+    <div class="input-section">
+      <textarea id="html-input" placeholder="Paste your HTML code here..."></textarea>
+    </div>
+    <div class="controls">
+      <button id="beautify-btn">Beautify HTML</button>
+      <label for="indent-style">Indentation:</label>
+      <select id="indent-style">
+        <option value="spaces">Spaces (2)</option>
+        <option value="tabs">Tabs</option>
+      </select>
+      <button id="copy-btn">Copy to Clipboard</button>
+    </div>
+    <div class="output-section">
+      <pre><code id="html-output" class="language-html"></code></pre>
+    </div>
+  </div>
+</div>
+<!-- Prism.js for syntax highlighting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="script.js"></script>
+<div id="footer"></div>
+</body>
+</html>

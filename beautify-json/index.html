@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Beautifier</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Prism.js CSS for syntax highlighting -->
+  <script src="../../tools/common.js" defer></script>
+  <link rel="stylesheet" href="../../tools/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" id="prism-dark-theme" disabled />
+</head>
+<body>
+<div id="header"></div>
+<div class="beautifywrap">
+<div class="container">
+  <h1>JSON Beautifier</h1>
+  <div class="theme-toggle">
+    <label for="dark-mode">Dark Mode:</label>
+    <input type="checkbox" id="dark-mode">
+  </div>
+  <div class="input-section">
+    <textarea id="json-input" placeholder="Paste your JSON here..."></textarea>
+  </div>
+  <div class="controls">
+    <button id="beautify-btn">Beautify JSON</button>
+    <button id="minify-btn">Minify JSON</button>
+    <label for="indent-style">Indentation:</label>
+    <select id="indent-style">
+      <option value="2">2 Spaces</option>
+      <option value="4">4 Spaces</option>
+      <option value="tabs">Tabs</option>
+    </select>
+    <button id="copy-btn">Copy to Clipboard</button>
+  </div>
+  <div class="output-section">
+    <pre><code id="json-output" class="language-json"></code></pre>
+  </div>
+</div>
+</div>
+<!-- Prism.js for syntax highlighting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="script.js"></script>
+<div id="footer"></div>
+</body>
+</html>
